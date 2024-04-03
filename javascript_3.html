@@ -21,6 +21,17 @@
             position: absolute;
             left: 25%;
         }
+
+        .h3_css_style {
+            background-color: #BDE0FE;
+            padding: 10px;
+        }
+
+        .h4_css_style {
+            background-color: #A2D2FF;
+            padding: 10px;
+            //margin-top: 50px;
+        }
     </style>
 </head>
 
@@ -171,6 +182,64 @@
             </script>
         </div>
 
+
+    </div>
+
+
+    <div>
+        <div>
+            <h3><span class="h3_css_style">String Methods</span></h3>
+        </div>
+
+        <div>
+            <h4><span class="h4_css_style">The + operator</span></h4>
+            <code>
+                const str = 'Hello' + ' ' + 'World!'; <br/>
+                // Hello World!
+              </code>
+            <script>
+                const str = 'Hello' + ' ' + 'World!';
+                console.log("+ Operator = " + str);
+            </script>
+        </div>
+        <div>
+            <h4><span class="h4_css_style">Array.join()</span></h4>
+            <code>
+                ['Hello', ' ', 'World!'].join('');   <br/>
+                // Hello World!
+              </code>
+            <script>
+                console.log("Array.join() = " + ['Hello', ' ', 'World!'].join(''));
+            </script>
+        </div>
+
+
+        <div>
+            <h4><span class="h4_css_style">String.concat();</span></h4>
+            <code>
+                const str1 = 'Hello'; <br>
+                const str2 = 'World'; <br>
+                const str3 = str1.concat(' ', str2);
+              </code>
+            <script>
+                const str1 = 'Hello';
+                const str2 = 'World!';
+                console.log("Concat = " + str1.concat(' ', str2));
+            </script>
+        </div>
+
+        <div>
+            <h4><span class="h4_css_style">Template Literals</span></h4>
+            <code>
+                const str11 = 'Hello'; <br/>
+                '${str11} World!'     <br/>
+                // Hello World!
+              </code>
+            <script>
+                const str11 = 'Hello';
+                console.log("Concat = " + "${str11} World!" );
+            </script>
+        </div>
 
     </div>
 

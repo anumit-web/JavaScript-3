@@ -16,6 +16,11 @@
         body {
             font-family: "Lato", sans-serif;
         }
+
+        .span_1 {
+            position: absolute;
+            left: 25%;
+        }
     </style>
 </head>
 
@@ -107,23 +112,62 @@
             <code>([1, 2, 3].reduce((x,y) => (x*y))</code> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span style="position: absolute;
             left: 25%;">// [3, 2, 1] </span>
             <script>
-                console.log("Array reduce = " + [1, 2, 3].reduce((x,y) => (x*y)));
+                console.log("Array reduce = " + [1, 2, 3].reduce((x, y) => (x * y)));
             </script>
         </div>
 
         <div>
-            <code>([1, 2, 3].reduce((x,y) => (x*y))</code> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span style="position: absolute;
-            left: 25%;">// [3, 2, 1] </span>
+            <code>([1, 2, 3].length</code> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span style="position: absolute;
+            left: 25%;">// 3 </span>
             <script>
-                console.log("Array reduce = " + [1, 2, 3].reduce((x,y) => (x*y)));
+                console.log("Array length = " + [1, 2, 3].length);
             </script>
         </div>
 
         <div>
-            <code>([1, 2, 3].reduce((x,y) => (x*y))</code> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span style="position: absolute;
-            left: 25%;">// [3, 2, 1] </span>
+            <code>([1, 2, 3].every(x => x < 10)</code> &nbsp;<span class="span_1">// true </span>
             <script>
-                console.log("Array reduce = " + [1, 2, 3].reduce((x,y) => (x*y)));
+                console.log("Array every = " + [1, 2, 3].every(x => x < 10));
+            </script>
+        </div>
+
+        <div>
+            <code>([1, 2, 3].some(x => x < 2)</code> &nbsp;<span class="span_1">// true </span>
+            <script>
+                console.log("Array some = " + [1, 2, 3].some(x => x < 2));
+            </script>
+        </div>
+
+        <div>
+            <p><code>const arr=[1, 2, 3, 4]</code></p>
+        </div>
+
+        <div>
+            <code>x=arr.shift()</code> &nbsp;<span class="span_1">// [2, 3, 4]] </span>
+            <script>
+                //console.log("Array some = " + ( arr.shift()));
+            </script>
+        </div>
+
+        <div>
+            <code>x=arr.unshift(9)</code> &nbsp;<span class="span_1">// [9, 1, 2, 3, 4]] </span>
+            <script>
+                //console.log("Array some = " + (arr.unshift(9)));
+            </script>
+        </div>
+
+
+        <div>
+            <code>x=arr.pop()</code> &nbsp;<span class="span_1">// arr = [1, 2] , x = 3</span>
+            <script>
+                //console.log("Array some = " + (x=arr.pop());
+            </script>
+        </div>
+
+        <div>
+            <code>x=arr.push(55)</code> &nbsp;<span class="span_1">// [1, 2, 3, 55]] </span>
+            <script>
+                //console.log("Array some = " + (arr.push(55));
             </script>
         </div>
 

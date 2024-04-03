@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quick Tips</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1> JavaScript Quick Tips </h1>
+    <p>Lato fonts <a href="https://fonts.google.com/specimen/Lato"
+            target="_blank">https://fonts.google.com/specimen/Lato</a></p>
+
+    <h3>Arrow Function</h3>
+    <h4>Regular Function</h4>
+    <code>let myCustomFunction = function() {}</code>
+    <h4>Arrow Function</h4>
+    <code>let myCustomFunction = () => {}</code>
+    <br><br>
+    <div>
+        <h3>Array CheatSheet</h3>
+        <div>
+            <code>(['a', 'b'].concat(['c'])</code> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span style="position: absolute;
+            left: 25%;">// ['a', 'b','c']</span>
+            <script>
+                console.log("concat = " + ['a', 'b'].concat(['c']));
+            </script>
+        </div>
+
+        <div>
+            <code>(['a', 'b'].join(['-'])</code> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span style="position: absolute;
+            left: 25%;">// ['a-b']</span>
+            <script>
+                console.log("join = " + ['a', 'b'].join(['-']));
+            </script>
+        </div>
+
+        <div>
+            <code>(['a', 'b','c'].slice(1)</code> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span style="position: absolute;
+            left: 25%;">// ['b','c']</span>
+            <script>
+                console.log("slice = " + ['a', 'b', 'c'].slice(1));
+            </script>
+        </div>
+
+        <div>
+            <code>(['a', 'b','c'].indexOf('b')</code> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span style="position: absolute;
+            left: 25%;">// 1 </span>
+            <script>
+                console.log("indexOf = " + ['a', 'b', 'c'].indexOf('b'));
+            </script>
+        </div>
+
+        <div>
+            <code>(['a', 'b','b'].lastIndexOf('b')</code> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span style="position: absolute;
+            left: 25%;">// 2 </span>
+            <script>
+                console.log("lastIndexOf = " + ['a', 'b', 'b'].lastIndexOf('b'));
+            </script>
+        </div>
+
+        <div>
+            <code>([1, 2, 3].map(x => x*2)</code> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span style="position: absolute;
+            left: 25%;">// [2, 4, 6] </span>
+            <script>
+                console.log("Array map = " + [1, 2, 3].map(x => x * 2));
+            </script>
+            <br>
+            <code>([1, 4, 9].map(num => Math.sqrt(num))</code> &nbsp;<span style="position: absolute;
+            left: 25%;">// [1, 2, 3] </span>
+            <script>
+                console.log("Array map = " + [1, 4, 9].map(num => Math.sqrt(num)));
+            </script>
+        </div>
+
+        <div>
+            <code>([2, 15, 3].sort()</code> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span style="position: absolute;
+            left: 25%;">// [15, 3, 2] </span>
+            <script>
+                console.log("Array sort = " + [2, 15, 3].sort());
+            </script>
+        </div>
+
+        <div>
+            <code>([1, 2, 3].reverse()</code> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span style="position: absolute;
+            left: 25%;">// [3, 2, 1] </span>
+            <script>
+                console.log("Array reverse = " + [1, 2, 3].reverse());
+            </script>
+        </div>
+
+        <div>
+            <code>([1, 2, 3].reduce((x,y) => (x*y))</code> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span style="position: absolute;
+            left: 25%;">// [3, 2, 1] </span>
+            <script>
+                console.log("Array reduce = " + [1, 2, 3].reduce((x,y) => (x*y)));
+            </script>
+        </div>
+
+        <div>
+            <code>([1, 2, 3].reduce((x,y) => (x*y))</code> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span style="position: absolute;
+            left: 25%;">// [3, 2, 1] </span>
+            <script>
+                console.log("Array reduce = " + [1, 2, 3].reduce((x,y) => (x*y)));
+            </script>
+        </div>
+
+        <div>
+            <code>([1, 2, 3].reduce((x,y) => (x*y))</code> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span style="position: absolute;
+            left: 25%;">// [3, 2, 1] </span>
+            <script>
+                console.log("Array reduce = " + [1, 2, 3].reduce((x,y) => (x*y)));
+            </script>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
